@@ -1,0 +1,56 @@
+name: 'Pi'
+scopeName: 'source.pi'
+type: 'tree-sitter'
+parser: 'tree-sitter-pi'
+#
+fileTypes: ['pi']
+
+comments:
+    start: '--'
+
+scopes:
+    'source_file': 'source.pi'
+
+
+    'comment': 'comment.block.pi'
+
+    # '"nu"': 'storage.modifier'
+    '"nu"': 'keyword.control'
+    '"!"': 'keyword.control'
+    '"?"': 'keyword.control'
+    '"|"': 'keyword.control'
+    '"."': 'keyword.control'
+    'end': 'constant.other'
+    'type_end': 'constant.other'
+
+    'process_name' : 'entity.name.function'
+    'integer' : 'constant.numeric'
+    'label' : 'entity.name.tag'
+    'name': 'string'
+    'reserved_name': 'string'
+    'sort_int' : 'support.type'
+    'sort_bool' : 'support.type'
+
+    '''
+    "*",
+    "/",
+    "+",
+    "-",
+    ''': 'keyword.operator'
+
+folds: [
+    {
+        type: [
+            'comment'
+            'proc_declaration'
+        ]
+    }
+    {
+        start: {index: 0, type: '{'}
+        end: {index: -1, type: '}'}
+    }
+    {
+        start: {index: 0, type: '('}
+        end: {index: -1, type: ')'}
+    }
+]

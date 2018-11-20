@@ -1,0 +1,5 @@
+fileTypes: [
+  "pi"
+]
+name: "Pi"
+scopeName: "source.pi"

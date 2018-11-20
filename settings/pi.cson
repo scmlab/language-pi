@@ -1,0 +1,3 @@
+'.source.pi':
+  'editor':
+    'commentStart': '-- '
