@@ -1,15 +1,15 @@
 {
   "name": "language-pi",
   "version": "0.0.0",
-  "description": "A short description of your package",
+  "description": "Grammar for the language Pi",
   "keywords": [],
-  "repository": "https://github.com/atom/language-pi",
+  "repository": "https://github.com/scmlab/language-pi",
   "license": "MIT",
   "engines": {
     "atom": "*",
     "node": "*"
   },
   "dependencies": {
-    "tree-sitter-pi": "~/github/tree-sitter-pi"
+    "tree-sitter-pi": "^1.0.0"
   }
 }
