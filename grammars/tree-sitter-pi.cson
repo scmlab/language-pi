@@ -22,6 +22,9 @@ scopes:
     '"."': 'keyword.control'
     'end': 'constant.other'
     'type_end': 'constant.other'
+    '"if"': 'keyword.control'
+    '"then"': 'keyword.control'
+    '"else"': 'keyword.control'
 
     'process_name' : 'entity.name.function'
     'integer' : 'constant.numeric'
@@ -36,6 +39,12 @@ scopes:
     "/",
     "+",
     "-",
+    "==",
+    "!=",
+    ">",
+    ">=",
+    "<",
+    "<=",
     ''': 'keyword.operator'
 
 folds: [
