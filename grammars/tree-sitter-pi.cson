@@ -14,7 +14,6 @@ scopes:
 
     'comment': 'comment.block.pi'
 
-    # '"nu"': 'storage.modifier'
     '"nu"': 'keyword.control'
     '"!"': 'keyword.control'
     '"?"': 'keyword.control'
@@ -26,11 +25,16 @@ scopes:
     '"then"': 'keyword.control'
     '"else"': 'keyword.control'
 
+    '"True"': 'constant.language'
+    '"False"': 'constant.language'
+
     'process_name' : 'entity.name.function'
     'integer' : 'constant.numeric'
+    'string' : 'string'
     'label' : 'entity.name.tag'
-    'name': 'string'
-    'reserved_name': 'string'
+    'name': 'support.storage.type'
+    'reserved_name': 'support.storage.type'
+
     'sort_int' : 'support.type'
     'sort_bool' : 'support.type'
 
