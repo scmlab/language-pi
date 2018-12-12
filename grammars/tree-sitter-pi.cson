@@ -19,6 +19,8 @@ scopes:
     '"?"': 'keyword.control'
     '"|"': 'keyword.control'
     '"."': 'keyword.control'
+    '"*"': 'keyword.control'
+    
     'end': 'constant.other'
     'type_end': 'constant.other'
     '"if"': 'keyword.control'
@@ -39,7 +41,6 @@ scopes:
     'sort_bool' : 'support.type'
 
     '''
-    "*",
     "/",
     "+",
     "-",
